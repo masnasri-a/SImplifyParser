@@ -1,0 +1,138 @@
+{
+    "name": "/businessUser/getBusinessUser",
+    "request": {
+        "auth": {
+            "type": "bearer",
+            "bearer": [
+                {
+                    "key": "token",
+                    "value": "eyJraWQiOiJRUlpQXC9xRldzMjlzNHE2bE94VHpTcHNwbVdRelRcL29FbnYwUERDZTFGRUE9IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiIwYTAzNzgyMi03NWM5LTQ3MTMtOGE1Yi05MjY2NzU4OGFjYmMiLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuYXAtc291dGhlYXN0LTEuYW1hem9uYXdzLmNvbVwvYXAtc291dGhlYXN0LTFfQ25veGg4UGVTIiwidmVyc2lvbiI6MiwiY2xpZW50X2lkIjoiMWozcmd0bzl1OXVqbGo5bTNkNGJiYTFxZnIiLCJvcmlnaW5fanRpIjoiYjYzMDU2NjUtYWY0MS00MGYxLWIxODgtMTEzYmFlNjhhZmYxIiwidG9rZW5fdXNlIjoiYWNjZXNzIiwic2NvcGUiOiJhd3MuY29nbml0by5zaWduaW4udXNlci5hZG1pbiBwaG9uZSBvcGVuaWQgcHJvZmlsZSBlbWFpbCIsImF1dGhfdGltZSI6MTY4ODYxMjc5OSwiZXhwIjoxNjg4Njk5MTk5LCJpYXQiOjE2ODg2MTI3OTksImp0aSI6ImU3MTU1YzI3LTE2YzAtNDVjMC05ZDY0LWRlZmZiZTA2OGNmMyIsInVzZXJuYW1lIjoiZTdmYTI3OTQtYzQ0Mi00ZDYxLWFmNzYtZGRiM2M0MWY1ZmExIn0.Im6zuuyLMijSYhptX9rTspqxA6DpxgTqCM9wJw3TJNuLsoJP-b8K54mwq9t6_OwUdxgFTeIkgktmPtBgSQIZ7-JCF-uAXzlvv0enHiZS3ylr83KQwZFEhNRJ6fdKoMBDzPh4c5qxw0rMImXdFKa4SCA6Mc1hVQc4cKJ2gJKyAdI5j4Nd3Uqkco7t1sj1T_zCiTkxyywqr3shAkOZMaP8l7galXOQHJQIIHRA2mATb88MzjeivC2X5SkZNoHWUEvoNidv-OgLH2GMSXaoWnguqhLdMpoP_Vr_T-218z5PD8yUkFQxC-6a_337nbjlUx60JZrdpV9ZFlHLDMfLzEYPJA",
+                    "type": "string"
+                }
+            ]
+        },
+        "method": "GET",
+        "header": [
+            {
+                "key": "Authorization",
+                "value": "",
+                "type": "text",
+                "disabled": true
+            }
+        ],
+        "url": {
+            "raw": "{{base_url}}/businessUser/getBusinessUser",
+            "host": [
+                "{{base_url}}"
+            ],
+            "path": [
+                "businessUser",
+                "getBusinessUser"
+            ]
+        }
+    },
+    "response": [
+        {
+            "name": "Response - 200 OK",
+            "originalRequest": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "Authorization",
+                        "value": "",
+                        "type": "text",
+                        "disabled": true
+                    }
+                ],
+                "url": {
+                    "raw": "{{base_url}}/businessUser/getBusinessUser",
+                    "host": [
+                        "{{base_url}}"
+                    ],
+                    "path": [
+                        "businessUser",
+                        "getBusinessUser"
+                    ]
+                }
+            },
+            "status": "OK",
+            "code": 200,
+            "_postman_previewlanguage": "json",
+            "header": [
+                {
+                    "key": "Date",
+                    "value": "Thu, 02 Mar 2023 04:01:03 GMT"
+                },
+                {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "key": "Content-Length",
+                    "value": "182"
+                },
+                {
+                    "key": "Connection",
+                    "value": "keep-alive"
+                },
+                {
+                    "key": "Apigw-Requestid",
+                    "value": "BInbvgotSQ0EPgg="
+                }
+            ],
+            "cookie": [],
+            "body": "{\n    \"id\": 12,\n    \"businessUserId\": 12,\n    \"businessPartnerId\": 4,\n    \"name\": \"Andi Iskandar Abdulah - updated\",\n    \"email\": \"andi.abdulah@idntimes.com\",\n    \"phoneNumber\": \"082216987541\",\n    \"userType\": \"ICE_WEBSITE\"\n}"
+        },
+        {
+            "name": "Response - 403 Forbidden",
+            "originalRequest": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "Authorization",
+                        "value": "",
+                        "type": "text",
+                        "disabled": true
+                    }
+                ],
+                "url": {
+                    "raw": "{{base_url}}/businessUser/getBusinessUser",
+                    "host": [
+                        "{{base_url}}"
+                    ],
+                    "path": [
+                        "businessUser",
+                        "getBusinessUser"
+                    ]
+                }
+            },
+            "status": "Forbidden",
+            "code": 403,
+            "_postman_previewlanguage": "json",
+            "header": [
+                {
+                    "key": "Date",
+                    "value": "Thu, 02 Mar 2023 04:11:38 GMT"
+                },
+                {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "key": "Content-Length",
+                    "value": "23"
+                },
+                {
+                    "key": "Connection",
+                    "value": "keep-alive"
+                },
+                {
+                    "key": "apigw-requestid",
+                    "value": "BIo_Kh8PyQ0EPIA="
+                }
+            ],
+            "cookie": [],
+            "body": "{\n    \"message\": \"Forbidden\"\n}"
+        }
+    ]
+}
