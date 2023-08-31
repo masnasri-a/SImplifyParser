@@ -1,0 +1,9 @@
+
+test('test', async ({ page }) => {
+  await page.goto('https://www.estidar.com/');
+  await page.getByRole('img', { name: 'ICE Logo' }).nth(2).click();
+  await page.getByText('ice.controller@idntimes.com').click();
+  await page.getByText('Informasi').click();
+  await page.getByText('Ikuti Kami').click();
+  await page.getByText('Unduh Aplikasi').click();
+});
