@@ -1,0 +1,14 @@
+{
+  "name": "Postman-playwright-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.37.1",
+    "@types/node": "^20.5.9"
+  },
+  "scripts": {},
+  "dependencies": {
+    "dotenv": "^16.3.1"
+  }
+}

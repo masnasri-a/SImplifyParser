@@ -1,0 +1,19 @@
+
+import { test, expect } from "@playwright/test";
+test.describe.configure({ mode: 'serial' });
+
+test.describe('Test Endpoint /metadata/banks', () => {
+	const expectResult = {};
+
+	test('Endpoint Test v1/metadata/banks Response - 200 OK', async ({ request }) => {
+		const Issues = await request.get('https://api.estidar.com/api/v1/metadata/banks');
+		expect.soft(Issues.status()).toBe(200);
+		const DataTypeParser: Record<string, any> = { 'id': 'number', 'name': 'string','code':'string' }
+		const jsonResult = await Issues.json()
+		for (const key of jsonResult) {
+            for (const submenu in key){
+                expect.soft(typeof key[submenu]).toBe(DataTypeParser[submenu])
+            }
+		}
+	});
+});

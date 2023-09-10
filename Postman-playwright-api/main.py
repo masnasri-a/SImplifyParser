@@ -5,7 +5,7 @@ from parser import parser_test
 parser = argparse.ArgumentParser(description="I/O file argument parser")
 
 parser.add_argument("--input", type=str, help="Input Json File", required=True)
-parser.add_argument("--output", type=str, help="Output File", required=True)
+# parser.add_argument("--output", type=str, help="Output File", required=True)
 
 args = parser.parse_args()
 # print(args.input)
